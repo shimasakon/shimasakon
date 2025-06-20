@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tlsbollei.vercel.app/sitemap.xml

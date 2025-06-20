@@ -3,8 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Menu } from "./Menu";
 import { blog } from "./ascii";
 import Footer from "./Footer";
+import { SEO } from "./SEO";
 
-interface Post {
+export interface Post {
   content: string;
   path: string;
   title: string;
@@ -249,6 +250,11 @@ export const Blog = () => {
   if (loading) {
     return (
       <div className="w-full px-4 sm:px-8">
+        <SEO 
+          title="Blog - tlsbollei"
+          description="Latest cybersecurity research, CTF writeups, and reverse engineering insights"
+          url="/blog"
+        />
         <div className="max-w-none window min-w-0 w-full">
           <div className="title-bar">
             <div className="title-bar-text">Exploring - (/blog)</div>
@@ -275,6 +281,11 @@ export const Blog = () => {
   } else {
     return (
       <div className="w-full px-4 sm:px-8">
+        <SEO 
+          title={`Blog${selectedDirectory !== "all" ? ` - ${selectedDirectory}` : ""}${selectedTag !== "all" ? ` #${selectedTag}` : ""} - tlsbollei`}
+          description={`${filteredPosts.length > 0 ? `${filteredPosts.length} posts about ` : ""}cybersecurity, CTF writeups, and reverse engineering${selectedTag !== "all" ? ` tagged with ${selectedTag}` : ""}`}
+          url={`/blog${location.search}`}
+        />
         <div className="max-w-none window min-w-0 w-full">
           <div className="title-bar">
             <div className="title-bar-text">

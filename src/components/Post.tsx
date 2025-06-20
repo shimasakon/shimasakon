@@ -6,6 +6,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Menu } from "./Menu";
 import Footer from "./Footer";
+import { SEO } from "./SEO";
 
 interface PostData {
   content: string;
@@ -13,6 +14,7 @@ interface PostData {
   date: Date;
   tags: string[];
   path: string;
+  excerpt: string; // Added excerpt field
 }
 
 interface PostFrontmatter {
@@ -98,6 +100,25 @@ export const Post = () => {
       .filter((tag) => tag.length > 0);
   };
 
+  const generateExcerpt = (
+    content: string,
+    maxLength: number = 200
+  ): string => {
+    // Remove markdown formatting for excerpt
+    const plainText = content
+      .replace(/#{1,6}\s+/g, "") // Remove headers
+      .replace(/\*\*(.*?)\*\*/g, "$1") // Remove bold
+      .replace(/\*(.*?)\*/g, "$1") // Remove italic
+      .replace(/\[(.*?)\]\(.*?\)/g, "$1") // Remove links, keep text
+      .replace(/`(.*?)`/g, "$1") // Remove inline code
+      .replace(/\n+/g, " ") // Replace newlines with spaces
+      .trim();
+
+    return plainText.length > maxLength
+      ? plainText.substring(0, maxLength).trim() + "..."
+      : plainText;
+  };
+
   const formatDate = (date: Date): string => {
     return date.toLocaleDateString("en-US", {
       year: "numeric",
@@ -156,6 +177,7 @@ export const Post = () => {
               date: frontmatter.date ? new Date(frontmatter.date) : new Date(),
               tags: parseTags(frontmatter.tags),
               path: relativePath,
+              excerpt: frontmatter.excerpt || generateExcerpt(body), // Include excerpt
             };
             break;
           }
@@ -177,9 +199,15 @@ export const Post = () => {
     fetchPost();
   }, [location.pathname, navigate]);
 
+  // Loading state:
   if (loading) {
     return (
       <div className="w-full px-4 sm:px-8">
+        <SEO
+          title="Loading Post - tlsbollei"
+          description="Loading blog post..."
+          url={location.pathname}
+        />
         <div className="max-w-none window min-w-0 w-full">
           <div className="title-bar">
             <div className="title-bar-text">Exploring - (/blog/...)</div>
@@ -203,9 +231,15 @@ export const Post = () => {
     );
   }
 
+  // Error state:
   if (error || !post) {
     return (
       <div className="w-full px-4 sm:px-8">
+        <SEO
+          title="Post Not Found - tlsbollei"
+          description="The requested blog post could not be found."
+          url={location.pathname}
+        />
         <div className="max-w-none window min-w-0 w-full">
           <div className="title-bar">
             <div className="title-bar-text">Exploring - (/blog/404)</div>
@@ -233,8 +267,18 @@ export const Post = () => {
     );
   }
 
+  // Main post content:
   return (
     <div className="w-full px-4 sm:px-8">
+      <SEO
+        title={`${post.title} - tlsbollei`}
+        description={post.excerpt} // Now using the actual excerpt from PostData
+        url={`/blog/${post.path}`}
+        type="article"
+        publishedTime={post.date.toISOString()}
+        tags={post.tags}
+        author="tlsbollei"
+      />
       <div className="max-w-none window min-w-0 w-full">
         <div className="title-bar">
           <div className="title-bar-text">Exploring - (/blog/{post.path})</div>

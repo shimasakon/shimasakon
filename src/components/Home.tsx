@@ -1,9 +1,16 @@
 import { tlsbollei } from "./ascii.tsx";
 import Footer from "./Footer.tsx";
 import { Menu } from "./Menu.tsx";
+import { SEO } from "./SEO.tsx";
 
 export const Main = () => (
   <div className="w-full px-4 sm:px-8">
+    <SEO 
+      title="tlsbollei - Cybersecurity Researcher & CTF Player"
+      description="Cybersecurity research, CTF writeups, reverse engineering, and binary exploitation insights. Follow my journey through the world of information security."
+      url="/"
+      type="website"
+    />
     <div className="max-w-none window min-w-0 w-full">
       <div className="title-bar">
         <div className="title-bar-text">Exploring - (/)</div>
@@ -22,7 +29,7 @@ export const Main = () => (
             <div className="col-span-12 md:col-span-2">
               <img
                 src="/tlsbollei.jpg"
-                alt="TLS Bollei Logo"
+                alt="tlsbollei Logo"
                 className="mb-4 rounded-full w-full max-w-24 md:max-w-none mx-auto md:mx-0"
               />
             </div>
