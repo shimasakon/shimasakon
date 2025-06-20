@@ -1,0 +1,68 @@
+import { tlsbollei } from "./ascii.tsx";
+import Footer from "./Footer.tsx";
+import { Menu } from "./Menu.tsx";
+
+export const Main = () => (
+  <div className="w-full px-4 sm:px-8">
+    <div className="max-w-none window min-w-0 w-full">
+      <div className="title-bar">
+        <div className="title-bar-text">Exploring - (/)</div>
+        <div className="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <Menu selected="home" />
+      <div className="window" role="tabpanel">
+        <div className="window-body main p-4">
+          <div className="overflow-x-auto">{tlsbollei}</div>
+          <hr />
+          <div className="grid grid-cols-12 gap-4 md:gap-8 mt-4">
+            <div className="col-span-12 md:col-span-2">
+              <img
+                src="/tlsbollei.jpg"
+                alt="TLS Bollei Logo"
+                className="mb-4 rounded-full w-full max-w-24 md:max-w-none mx-auto md:mx-0"
+              />
+            </div>
+            <div className="prose max-w-none col-span-12 md:col-span-10 overflow-hidden min-w-0">
+              <p className="break-words">
+                Hi, I'm tlsbollei! I'm passionate about cybersecurity and
+                low-level computing.{" "}
+              </p>
+              <h2 className="mt-0 mb-0">What I do</h2>
+              <ul className="break-words">
+                <li>
+                  <b>Reverse Engineering</b>: I enjoy dissecting software and
+                  understanding how things work under the hood
+                </li>
+                <li>
+                  <b>Capture The Flag (CTF)</b>: Regular participant in
+                  cybersecurity competitions, solving challenges in cryptography,
+                  binary exploitation, and more
+                </li>
+                <li>
+                  <b>Security Research</b>: Always learning about new
+                  vulnerabilities and exploitation techniques
+                </li>
+              </ul>
+              <h2 className="mt-0 mb-0">Interests</h2>
+              <p>
+                When I'm not deep in assembly code or hunting for flags, I enjoy
+                exploring the intersection of technology and creativity. I believe
+                in building an inclusive tech community where everyone can express
+                themselves authentically.
+              </p>
+              <p>
+                Feel free to reach out if you want to collaborate on security
+                research or discuss the latest CTF challenges!
+              </p>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </div>
+  </div>
+);
