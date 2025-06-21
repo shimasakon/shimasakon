@@ -9,7 +9,7 @@ The Baby Android 1 turned out to be a tad bit more complex than Baby Android 2 C
 ### Challenge Overview
 **Category:** Reverse Engineering  
 **Difficulty:** Medium  
-**Points:** 250 
+**Points:** 250  
 **Files:** `baby_android-1.apk`
 ### Files 
 We are given a single .apk file, called **baby_android-1.apk**. As I said, B.B.A (Baby Android) 1 turned out to be somewhat weirder and harder than 2. 
