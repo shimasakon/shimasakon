@@ -55,7 +55,7 @@ export const Main = () => (
                   <b>Offensive/Defensive operations</b>:  Regularly participate in offensive and defensive simulations on real life digital infrastructures, with extensive experience in incident response, digital forensics, SOC analytics and leading offensive attacks on the Windows enviroment.
                 </li>
                 <li>
-                  <b>More about me right here =></b>: <a href="https://tlsbollei.vercel.app/about" target="_blank">About Me</a>
+                  <b>More about me right here {'=>'}:</b> <a href="https://tlsbollei.vercel.app/about" target="_blank">About Me</a>
                 </li>
               </ul>
               <h2 className="mt-0 mb-0">Interests</h2>
