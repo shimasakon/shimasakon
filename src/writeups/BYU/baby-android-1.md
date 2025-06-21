@@ -23,7 +23,7 @@ One thing that I learned from these .apk rev challenges is to always, and I mean
 From this we can logically derive that the flag is 28 ASCII characters long/ 28 bytes long (since 1 ASCII symbol = 1 byte), but more importantly, that the flag is somewhere stored in 28 parts inside of the source code - statically embedded, waiting to be plucked. =)
 And we manage to find it :
 
-```
+```markdown
 baby-android-1/
 		res/
 				layout/
@@ -34,7 +34,7 @@ You can download the .xml file right here => <a href="/pic/activity_main.txt" do
 ### Problem and solution
 Inside of the .xml file, we had TextView lines (namely 28). This is the format that all of them followed :
 
-```
+```markdown
 <TextView android:id="@id/flagPart1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="420.0dip" android:text="}" android:layout_marginEnd="216.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
 ```
 
