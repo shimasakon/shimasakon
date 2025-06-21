@@ -23,7 +23,6 @@ export const About = () => (
       <Menu selected="about" />
       <div className="window" role="tabpanel">
         <div className="window-body main p-4">
-          <div className="overflow-x-auto">{tlsbollei}</div>
           <hr />
           <div className="prose max-w-none col-span-12 md:col-span-10 overflow-hidden min-w-0">
             { /* TVOJ HTML CONTENT, Môžeš si to prepísať ako sa ti zachce. */}
@@ -31,10 +30,6 @@ export const About = () => (
                 si to customizovať cez Tailwind CSS triedy ako "text-lg", "text-base" napr.
                 <h1 className="text-2xl font-bold">About Me</h1>
             */}
-            <p className="break-words">
-              Hi, I'm tlsbollei! I'm passionate about cybersecurity and
-              low-level computing.{" "}
-            </p>
             <h2 className="mt-0 mb-0">What I do</h2>
             <ul className="break-words">
               <li>
