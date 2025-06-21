@@ -1,8 +1,8 @@
 ---
-title: "My Blog Post About React"
+title: "test"
 date: "2025-06-19"
-excerpt: "Learn about React hooks and state management"
+excerpt: "test"
 tags: "react, javascript, frontend, hooks, tutorial"
 ---
 
-Your actual blog content goes here...
+test
