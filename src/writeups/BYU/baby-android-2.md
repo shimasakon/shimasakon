@@ -82,3 +82,7 @@ and the result...
 $ ./solve.py
 byuctf{c++_in_an_apk??}
 ```
+
+### Flag
+
+**byuctf{c++_in_an_apk??}**
