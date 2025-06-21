@@ -10,7 +10,7 @@ The Baby Android 1 turned out to be a tad bit more complex than Baby Android 2 C
 **Category:** Reverse Engineering  
 **Difficulty:** Medium  
 **Points:** 250  
-**Files:** `baby_android-1.apk`
+**Files:** **baby_android-1.apk**
 ### Files 
 We are given a single .apk file, called **baby_android-1.apk**. As I said, B.B.A (Baby Android) 1 turned out to be somewhat weirder and harder than 2. 
 Again, we start with decompiling : 
@@ -19,7 +19,7 @@ Again, we start with decompiling :
 apktool d baby-android-1.apk -o baby-android-1
 ```
 
-One thing that I learned from these .apk rev challenges is to always, and I mean always first sniff out `MainActivity` within jadx-gui. Here, we can find exactly 28 `cleanUp()` functions, all of which find 28 textviews (`flagPart1`...`flagPart28`)
+One thing that I learned from these .apk rev challenges is to always, and I mean always first sniff out **MainActivity** within jadx-gui. Here, we can find exactly 28 **cleanUp()** functions, all of which find 28 textviews (**flagPart1**... **flagPart28**)
 From this we can logically derive that the flag is 28 ASCII characters long/ 28 bytes long (since 1 ASCII symbol = 1 byte), but more importantly, that the flag is somewhere stored in 28 parts inside of the source code - statically embedded, waiting to be plucked. =)
 And we manage to find it :
 
@@ -38,7 +38,7 @@ Inside of the .xml file, we had TextView lines (namely 28). This is the format t
 <TextView android:id="@id/flagPart1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="420.0dip" android:text="}" android:layout_marginEnd="216.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
 ```
 
-In every single TextView line we can see an ASCII letter of the flag directly after `android:text=` , e.g in `flagPart1`, its `android:text="}"`. Based off of this knowledge, we can extract every single letter of the flag.
+In every single TextView line we can see an ASCII letter of the flag directly after **android:text=** , e.g in **flagPart1** , its  **android:text="}"**. Based off of this knowledge, we can extract every single letter of the flag.
 And given that we are definitely not lazy, we write a python script for it!
 
 ```python
@@ -62,13 +62,13 @@ b}tayccdrni0dkupocfe_efi_4e{
 ```
 
 So, we can can see the initial 6 letters of the flag, "byuctf", as well as both of the curly brackets. But this, by itself, is an obnoxiously difficult anagram. One could do it logically and somehow arrange it to forge/create a valid flag, but we looked at it differently.
-While analyzing the .xml file, I noticed something quite peculiar. Each tuple in the `flag_parts` was in the form :
+While analyzing the .xml file, I noticed something quite peculiar. Each tuple in the **flag_parts** was in the form :
 
 ```python
 (text_character, layout_marginBottom, layout_marginEnd)
 ```
 
-where each value comes from each `TextView` from our XML. Based off of this, I had a theory - what if we arranged the respective letters from each `TextView` with their respective coordinates, using Kivy Android GUI?
+where each value comes from each **TextView** from our XML. Based off of this, I had a theory - what if we arranged the respective letters from each **TextView** with their respective coordinates, using Kivy Android GUI?
 
 ### Solve
 
