@@ -1,4 +1,3 @@
-import { tlsbollei } from "./ascii.tsx";
 import Footer from "./Footer.tsx";
 import { Menu } from "./Menu.tsx";
 import { SEO } from "./SEO.tsx";
