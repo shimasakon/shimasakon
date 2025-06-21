@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
         putwc(((mix >> 4 & 0xF) + *p & 0xF | *p & 0xF0) * 0x100 + 0x1000 +
               (mix + p[1] & 0xF | p[1] & 0xF0U), stdout);
-
+        
         if (p[1] == '\0') { putwc(L'\n', stdout); exit(0); }
         argv[1] += 2;                             
         return main(2, (void**)argv);             
@@ -55,6 +55,7 @@ int main(int argc, char **argv)
     fprintf(stderr, "USAGE: %s <text>\n", argv[0]);
     return 1;
 }
+i<3nink
 ```
 
 The entry point, **main**, is simple. It :
