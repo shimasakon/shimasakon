@@ -62,7 +62,7 @@ for (int i = 0; i <= 22; i++) {
 }
 ```
 
-For every index i from 0 to 22, compute ```[i * i] % 47```. This sequence of operations can be reversed very easily, using the following script :
+For every index i from 0 to 22, compute ``[i * i] % 47``. This sequence of operations can be reversed very easily, using the following script :
 
 ```python
 def recover_flag():
