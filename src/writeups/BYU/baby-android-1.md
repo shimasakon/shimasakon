@@ -127,7 +127,7 @@ if __name__ == '__main__':
     FlagLayoutApp().run()
 ```
 
-![flag reconstruct](/pic/babyandroid1.png)
+![flag reconstruct](https://github.com/tlsbollei/tlsbollei/blob/c6e92d106a7babbe78e4044df8dcc801cbac0d09/pic/babyandroid1.png)
 
 Wow! So it worked! :>
 
