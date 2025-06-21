@@ -1,5 +1,5 @@
 ---
-title: "Baby Android 2"
+title: "BYUCTF 2025 : Baby Android 2"
 date: "2025-05-17"
 excerpt: "Fun introduction to APK reverse engineering"
 tags: "rev, apk, jadx-gui"
