@@ -127,9 +127,7 @@ if __name__ == '__main__':
     FlagLayoutApp().run()
 ```
 
-<p align="center">
-  <img src="/pic/babyandroid1.png" alt="flag reconstruct" width="600" />
-</p>
+![flag reconstruct](/pic/babyandroid1.png)
 
 Wow! So it worked! :>
 
