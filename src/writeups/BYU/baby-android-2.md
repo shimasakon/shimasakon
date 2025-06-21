@@ -11,7 +11,7 @@ BYU CTF 2025 was a very nice experience, and as Team Slovakia, we managed to end
 **Difficulty:** Easy  
 **Points:** 50  
 **Files:** `baby_android-2.apk`
-## Files 
+### Files 
 We are given a single .apk file, called **baby_android-2.apk**.
 Now, there is not much to analyze here :D Booting up jadx-gui (amazing tool for apk reversing), we can see a class called **FlagChecker**. In this FlagChecker class, there was a file called **libbabyandroid.so** referenced. Interesting, huh?
 ### Decompiling
