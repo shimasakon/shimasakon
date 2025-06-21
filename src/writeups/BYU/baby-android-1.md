@@ -30,7 +30,7 @@ baby-android-1/
 							activity_main.xml
 ```
 
-You can download the .xml file right here => <a href="/pic/activity_main.txt" download>activity_main.xml</a>
+You can download the .xml file right here => https://github.com/tlsbollei/tlsbollei/blob/main/pic/activity_main.txt
 ### Problem and solution
 Inside of the .xml file, we had TextView lines (namely 28). This is the format that all of them followed :
 
