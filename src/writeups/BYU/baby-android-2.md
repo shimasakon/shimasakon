@@ -6,7 +6,7 @@ tags: "rev, apk, jadx-gui"
 ---
 
 BYU CTF 2025 was a very nice experience, and as Team Slovakia, we managed to end up on the 35th spot, and we successfuly solved all of the reverse engineering challenges. From the 5 reverse engineering challenges provided, two of them were focused on .apk reverse engineering, which is a fun spice up from your typical keygen crackme. Let's get into it!
-## Challenge Overview
+### Challenge Overview
 **Category:** Reverse Engineering  
 **Difficulty:** Easy  
 **Points:** 50  
@@ -14,7 +14,7 @@ BYU CTF 2025 was a very nice experience, and as Team Slovakia, we managed to end
 ## Files 
 We are given a single .apk file, called **baby_android-2.apk**.
 Now, there is not much to analyze here :D Booting up jadx-gui (amazing tool for apk reversing), we can see a class called **FlagChecker**. In this FlagChecker class, there was a file called **libbabyandroid.so** referenced. Interesting, huh?
-## Decompiling
+### Decompiling
 Let's start with unpacking the .apk file and finding the libbyandroid.so file. We can do this by :
 
 ```bash
@@ -44,7 +44,7 @@ return JNI_FALSE;
 
 }
 ```
-## Understanding the program logic and reversing it
+### Understanding the program logic and reversing it
 The source defines a 47 byte lookup table :
 
 ```c
