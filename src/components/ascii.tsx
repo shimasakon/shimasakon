@@ -18,3 +18,13 @@ export const blog = (
   `}  <br/>
   </p>
 )
+
+export const writeups = (
+      <p className="monospace whitespace-pre-wrap leading-3.5 not-prose">{`__        __    _ _                       
+\\ \\      / / __(_) |_ ___ _   _ _ __  ___ 
+ \\ \\ /\\ / / '__| | __/ _ \\ | | | '_ \\/ __|
+  \\ V  V /| |  | | ||  __/ |_| | |_) \\__ \\
+   \\_/\\_/ |_|  |_|\\__\\___|\\__,_| .__/|___/
+                               |_|        `}  <br/>
+  </p>
+)

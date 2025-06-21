@@ -5,6 +5,9 @@ import "./App.css";
 import "98.css"
 import { Main } from "./components/Home.tsx";
 import { Post } from "./components/Post.tsx";
+import { Writeups } from "./components/Writeups.tsx";
+import { WriteupPost } from "./components/WriteupPost.tsx";
+import { About } from "./components/About.tsx";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/*" element={<Post />} />
+            <Route path="/writeups" element={<Writeups />} />
+            <Route path="/writeups/*" element={<WriteupPost/>} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </div>

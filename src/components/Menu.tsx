@@ -11,6 +11,12 @@ export const Menu = ({selected}: MenuProps) => {
       <li role="tab" {...(selected == "blog" ? { "aria-selected": true } : {})}>
         <a href="/blog">Blog</a>
       </li>
+      <li role="tab" {...(selected == "writeups" ? { "aria-selected": true } : {})}>
+        <a href="/writeups">Writeups</a>
+      </li>
+      <li role="tab" {...(selected == "about" ? { "aria-selected": true } : {})}>
+        <a href="/about">About</a>
+      </li>
     </menu>
   );
 };
