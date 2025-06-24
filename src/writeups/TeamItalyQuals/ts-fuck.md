@@ -8,8 +8,8 @@ tags: "rev, typescript, hard, reversing-operations"
 The TeamItaly Quals 2025 served as this years election process for the members of Team Italy - a prestigious CTF team full of talented people representing their country at the ECSC. Their challenges were worthy of this title - with most challenges not exceeding 10 solves, with the CTF having over 500 people officialy registered. Let's get into it!
 ### Challenge Overview
 **Category:** Reverse Engineering  
-**Difficulty:** Hard
-**Points:** 500 
+**Difficulty:** Hard  
+**Points:** 500  
 **Files:** **TsFuck.ts**
 ### Files 
 We are given 1 file, and that is a file called **TsFuck.ts**. 
