@@ -2,7 +2,7 @@
 title: "Break The Syntax 2025 : Translator"
 date: "2025-05-09"
 excerpt: "Reverse engineering the logic of a string translator"
-tags: "rev, ELF, reversing-operations"
+tags: "rev, ELF, medium, reversing-operations"
 ---
 
 Break the Syntax 2025 was an amazing experience. As rakuz4n, we managed to place 35th among strong competition of CTF players, and I managed to solve all Reverse Engineering tasks, a feat I'm proud of. Let's get into it!
