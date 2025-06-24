@@ -2,7 +2,7 @@
 title: "BYUCTF 2025 : Baby Android 1"
 date: "2025-05-17"
 excerpt: "Who doesn't love .apk?"
-tags: "rev, apk, jadx-gui, baby-apk, xml"
+tags: "rev, apk, jadx-gui, easy, xml"
 ---
 
 The Baby Android 1 turned out to be a tad bit more complex than Baby Android 2 CTF task.
