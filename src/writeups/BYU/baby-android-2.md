@@ -2,7 +2,7 @@
 title: "BYUCTF 2025 : Baby Android 2"
 date: "2025-05-17"
 excerpt: "Fun introduction to APK reverse engineering"
-tags: "rev, apk, jadx-gui"
+tags: "rev, apk, easy, jadx-gui"
 ---
 
 BYU CTF 2025 was a very nice experience, and as Team Slovakia, we managed to end up on the 35th spot, and we successfuly solved all of the reverse engineering challenges. From the 5 reverse engineering challenges provided, two of them were focused on .apk reverse engineering, which is a fun spice up from your typical keygen crackme. Let's get into it!
