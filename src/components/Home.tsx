@@ -63,7 +63,7 @@ export const Main = () => (
                 When I'm not deep in assembly code or hunting for flags, I enjoy
                 exploring the intersection of technology and creativity. I believe
                 in building an inclusive tech community where everyone can express
-                themselves authentically. Nink my princess!! :3
+                themselves authentically.
               </p>
               <p>
                 Feel free to reach out if you want to collaborate on security
