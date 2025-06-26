@@ -55,7 +55,6 @@ int main(int argc, char **argv)
     fprintf(stderr, "USAGE: %s <text>\n", argv[0]);
     return 1;
 }
-i<3nink
 ```
 
 The entry point, **main**, is simple. It :
