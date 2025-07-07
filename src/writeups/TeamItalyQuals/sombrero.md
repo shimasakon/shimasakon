@@ -6,7 +6,7 @@ tags: "crypto, hash-collision, hard"
 ---
 
 ### Challenge Overview
-**Category:** Cryptography 
+**Category:** Cryptography  
 **Difficulty:** Hard  
 **Points:** 500  
 **Files:** **sombrero.py**
