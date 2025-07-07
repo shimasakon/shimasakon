@@ -4,7 +4,7 @@ date: "2025-06-07"
 excerpt: "Anonymous centralized blockchain collision"
 tags: "crypto, hash-collision, hard"
 ---
-
+Sombrero was a cryptography challenge in the qualification for Team Italy which had around 3 solves by the end of the entire competition (Yes, even after they gave the players a hint about that they had to collide one of the variables :D Enjoy!
 ### Challenge Overview
 **Category:** Cryptography  
 **Difficulty:** Hard  
