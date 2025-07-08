@@ -37,6 +37,15 @@ export const About = () => (
             Fun things I've done over the years:
             </p>
             <ul>
+                <li>
+                Currently working as a paid Cybersecurity Intern at <a href="https://www.fortinet.com/" target="_blank">Fortinet</a>:
+                <ul className="list-disc ml-6">
+                        <li>Set up lab environments with Fortinet's full product suite, including FortiGate NGFW and FortiEDR.</li>
+                        <li>Simulated malware, network intrusions, and endpoint compromise to evaluate defensive response.</li>
+                        <li>Documented attacks, defense behavior, and remediation steps for internal reports.</li>
+                        <li>Collaborated with senior engineers to fine-tune detection rules and simulate APT scenarios.</li>
+                      </ul>
+                </li>
                 <li>Independent Malware Researcher and Analyst, capturing malware strains on a <a href="https://github.com/telekom-security/tpotce" target="_blank">T-POT</a>, with pre-configured Kippo, Dionaea, Cowrie.</li>
                 <li>Elected as a member of Team Slovakia 🇸🇰 , primarily solving reverse engineering tasks with a secondary focus on crypto/forensics.</li> 
                 <li>Founded and captained <a href="https://ctftime.org/team/383658" target="_blank">rakuz4n</a>, a CTF team consisting of players from teams from all across the world, with the intent on creating a friendly enviroment for collective learning and individual growth.</li>
