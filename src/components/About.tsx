@@ -40,10 +40,10 @@ export const About = () => (
                 <li>
                 Currently working as a paid Cybersecurity Intern at <a href="https://www.fortinet.com/" target="_blank">Fortinet</a>:
                 <ul className="list-disc ml-6">
-                        <li>Set up lab environments with Fortinet's full product suite, including FortiGate NGFW and FortiEDR.</li>
-                        <li>Simulated malware, network intrusions, and endpoint compromise to evaluate defensive response.</li>
+                        <li>Set up lab environments with Fortinet's full product suite, including FortiGate NGFW, FortiEDR, FortiClient and more.</li>
+                        <li>Simulated malware, network intrusions, and endpoint compromise to evaluate defensive response and the efficiency of Fortinet's suite.</li>
                         <li>Documented attacks, defense behavior, and remediation steps for internal reports.</li>
-                        <li>Collaborated with senior engineers to fine-tune detection rules and simulate APT scenarios.</li>
+                        <li>Collaborated with senior SOC engineers/analysts to fine-tune detection rules and simulate APT scenarios.</li>
                       </ul>
                 </li>
                 <li>Independent Malware Researcher and Analyst, capturing malware strains on a <a href="https://github.com/telekom-security/tpotce" target="_blank">T-POT</a>, with pre-configured Kippo, Dionaea, Cowrie.</li>
