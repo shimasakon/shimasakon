@@ -38,15 +38,23 @@ export const About = () => (
             </p>
             <ul>
                 <li>
-                Currently working as a paid Cybersecurity Intern at <a href="https://www.fortinet.com/" target="_blank">Fortinet</a>:
+                💼 Cybersecurity Intern @ <a href="https://www.fortinet.com/" target="_blank">Fortinet</a> (Remote) — 2025–Present </a>:
                 <ul className="list-disc ml-6">
-                        <li>Set up lab environments with Fortinet's full product suite, including FortiGate NGFW, FortiEDR, FortiClient and more.</li>
-                        <li>Simulated malware, network intrusions, and endpoint compromise to evaluate defensive response and the efficiency of Fortinet's suite.</li>
-                        <li>Documented attacks, defense behavior, and remediation steps for internal reports.</li>
-                        <li>Collaborated with senior SOC engineers/analysts to fine-tune detection rules and simulate APT scenarios.</li>
+                        <li>• Architected and deployed complex digital infrastructures (VMware ESXi, FortiEDR, NGFW, FortiGate, FortiDeceptor, FortiAnalyzer...) for red team simulation and penetration testing</li>
+                        <li>• Executed full-scope penetration tests against enterprise environments; simulated malware, network intrusions and attacks on hardened endpoints.</li>
+                        <li>• Authored comprehensive internal reports on full attack chains, post-exploitation, and malware behavior for executive-level briefings.</li>
+                        <li>• Developed and executed malware and exploit scenarios; worked closely with senior SOC engineers from <a href="https://www.orange.com/en" target="_blank">Orange</a>  on detection engineering and threat modeling.</li>
                       </ul>
                 </li>
-                <li>Independent Malware Researcher and Analyst, capturing malware strains on a <a href="https://github.com/telekom-security/tpotce" target="_blank">T-POT</a>, with pre-configured Kippo, Dionaea, Cowrie.</li>
+                  <li>
+                🔬 Independent Malware Researcher and Analyst — 2023–Present </a>:
+                <ul className="list-disc ml-6">
+                        <li>• Operate a production-grade <a href="https://github.com/telekom-security/tpotce" target="_blank">T-POT honeypot</a> cluster with Kippo, Dionaea, and Cowrie to collect live malware strains from active threat actors.</li>
+                        <li>• Captured and reverse engineered over 150+ diverse malware strains.</li>
+                        <li>• Authored internal threat reports correlating malware behavior with MITRE ATT&CK techniques and infrastructure overlaps with known APT groups.</li>
+                        <li>• Rebuilt proprietary C2 protocols for isolated interaction, which enabled behavioral analysis in a sandboxed environment.</li>
+                      </ul>
+                </li>
                 <li>Elected as a member of Team Slovakia 🇸🇰 , primarily solving reverse engineering tasks with a secondary focus on crypto/forensics.</li> 
                 <li>Founded and captained <a href="https://ctftime.org/team/383658" target="_blank">rakuz4n</a>, a CTF team consisting of players from teams from all across the world, with the intent on creating a friendly enviroment for collective learning and individual growth.</li>
                 <li>Closely worked with private security researchers and veteran red teamers on the topics of penetration testing and malware development, where we specifically worked on innovative methods to extract SSNs without relying on incrementation and parsing the NTDLL.dll along with anti-sandbox techniques. One of our biggest researches was the attempted identification and termination of all <a href="https://en.wikipedia.org/wiki/Kernel_Patch_Protection" target="_blank">PatchGuard (KPP)</a> threads, in order to allow tampering with critical kernel structures, which as a result would drastically simplify the process of developing bootkits/rootkits.</li>
