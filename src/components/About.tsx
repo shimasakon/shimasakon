@@ -38,22 +38,22 @@ export const About = () => (
             </p>
             <ul>
                 <li>
-                💼 Cybersecurity Intern @ <a href="https://www.fortinet.com/" target="_blank">Fortinet</a> (Remote) — 2025–Present </a>:
-                <ul className="list-disc ml-6">
-                        <li>• Architected and deployed complex digital infrastructures (VMware ESXi, FortiEDR, NGFW, FortiGate, FortiDeceptor, FortiAnalyzer...) for red team simulation and penetration testing</li>
-                        <li>• Executed full-scope penetration tests against enterprise environments; simulated malware, network intrusions and attacks on hardened endpoints.</li>
-                        <li>• Authored comprehensive internal reports on full attack chains, post-exploitation, and malware behavior for executive-level briefings.</li>
-                        <li>• Developed and executed malware and exploit scenarios; worked closely with senior SOC engineers from <a href="https://www.orange.com/en" target="_blank">Orange</a>  on detection engineering and threat modeling.</li>
-                      </ul>
+                💼 Cybersecurity Intern @ <a href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer">Fortinet</a> (Remote) — 2025–Present:
+                    <ul className="list-disc ml-6">
+                          <li>Architected and deployed complex digital infrastructures (VMware ESXi, FortiEDR, NGFW, FortiGate, FortiDeceptor, FortiAnalyzer...) for red team simulation and penetration testing.</li>
+                          <li>Executed full-scope penetration tests against enterprise environments; simulated malware, network intrusions, and attacks on hardened endpoints.</li>
+                          <li>Authored comprehensive internal reports on full attack chains, post-exploitation, and malware behavior for executive-level briefings.</li>
+                          <li>Developed and executed malware and exploit scenarios; worked closely with senior SOC engineers from <a href="https://www.orange.com/en" target="_blank" rel="noopener noreferrer">Orange</a> on detection engineering and threat modeling.</li>
+                    </ul>
                 </li>
-                  <li>
-                🔬 Independent Malware Researcher and Analyst — 2023–Present </a>:
-                <ul className="list-disc ml-6">
-                        <li>• Operate a production-grade <a href="https://github.com/telekom-security/tpotce" target="_blank">T-POT honeypot</a> cluster with Kippo, Dionaea, and Cowrie to collect live malware strains from active threat actors.</li>
-                        <li>• Captured and reverse engineered over 150+ diverse malware strains.</li>
-                        <li>• Authored internal threat reports correlating malware behavior with MITRE ATT&CK techniques and infrastructure overlaps with known APT groups.</li>
-                        <li>• Rebuilt proprietary C2 protocols for isolated interaction, which enabled behavioral analysis in a sandboxed environment.</li>
-                      </ul>
+                <li>
+                🔬 Independent Malware Researcher and Analyst — 2023–Present:
+                    <ul className="list-disc ml-6">
+                            <li>Operate a production-grade <a href="https://github.com/telekom-security/tpotce" target="_blank" rel="noopener noreferrer">T-POT honeypot</a> cluster with Kippo, Dionaea, and Cowrie to collect live malware strains from active threat actors.</li>
+                            <li>Captured and reverse engineered over 150+ diverse malware strains.</li>
+                            <li>Authored internal threat reports correlating malware behavior with MITRE ATT&CK techniques and infrastructure overlaps with known APT groups.</li>
+                            <li>Rebuilt proprietary C2 protocols for isolated interaction, enabling behavioral analysis in a sandboxed environment.</li>
+                        </ul>
                 </li>
                 <li>Elected as a member of Team Slovakia 🇸🇰 , primarily solving reverse engineering tasks with a secondary focus on crypto/forensics.</li> 
                 <li>Founded and captained <a href="https://ctftime.org/team/383658" target="_blank">rakuz4n</a>, a CTF team consisting of players from teams from all across the world, with the intent on creating a friendly enviroment for collective learning and individual growth.</li>
