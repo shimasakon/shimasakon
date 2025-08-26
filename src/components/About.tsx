@@ -47,6 +47,14 @@ export const About = () => (
                     </ul>
                 </li>
                 <li>
+                🛡️ Red Team Tooling & EDR Evasion Research — 2023–Present:
+                    <ul className="list-disc ml-6">
+                            <li>Built custom loaders and implants that simulate advanced attacker tradecraft against enterprise endpoints.</li>
+                            <li>Researched and implemented a wide range of defense-evasion techniques, including stealthy execution, runtime hijacking, process injection methods, anti-analysis/environment validation and many more whilst maintaining full undetectability by enterprise EDR products as well as full documentation of each method.</li>
+                            <li>Used these projects in controlled lab environments to test modern detection capabilities, expose blind spots in EDR/XDR tooling, and provide insights for defender mitigation, particularly in assessing the effectiveness of Fortinet products.</li>
+                        </ul>
+                </li>
+                <li>
                 🔬 Independent Malware Researcher and Analyst — 2023–Present:
                     <ul className="list-disc ml-6">
                             <li>Operate a production-grade <a href="https://github.com/telekom-security/tpotce" target="_blank" rel="noopener noreferrer">T-POT honeypot</a> cluster with Kippo, Dionaea, and Cowrie to collect live malware strains from active threat actors.</li>
