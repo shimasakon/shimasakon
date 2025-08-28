@@ -38,7 +38,7 @@ export const About = () => (
             </p>
             <ul>
                 <li>
-                💼 Cybersecurity Intern @ <a href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer">Fortinet</a> (Remote) — 2025–Present:
+                💼 Red Teaming Intern @ <a href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer">Fortinet</a> (Remote) — 2025–Present:
                     <ul className="list-disc ml-6">
                           <li>Architected and deployed complex digital infrastructures (VMware ESXi, FortiEDR, NGFW, FortiGate, FortiDeceptor, FortiAnalyzer...) for red team simulation and penetration testing.</li>
                           <li>Executed full-scope penetration tests against enterprise environments; simulated malware, network intrusions, and attacks on hardened endpoints.</li>
