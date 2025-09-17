@@ -49,7 +49,7 @@ export const About = () => (
                 <li>
                 🛡️ Red Team Tooling & EDR Evasion Research — 2023–Present:
                     <ul className="list-disc ml-6">
-                            <li>Built custom loaders and implants that simulate advanced attacker tradecraft against enterprise endpoints.</li>
+                            <li>Built custom loaders and implants that simulate advanced attacker tradecraft against enterprise endpoints. e.g KittyLoader, a C/Assembly research loader for EDR-evasion testing (early CRT entrypoint hijack, PEB-list unlinking, anti-analysis heuristics, export-hash API resolution, runtime key-derived payload decryption, RW→RX remap, enclave-style dispatch) — featured by Risky.Biz, the UK NCSC CTO weekly digest, SecurityLab.ru/Habr, and LWiS; widely discussed across X and other social media by enterprise defenders and red team engineers.</li>
                             <li>Researched and implemented a wide range of defense-evasion techniques, including stealthy execution, runtime hijacking, process injection methods, anti-analysis/environment validation and many more whilst maintaining full undetectability by enterprise EDR products as well as full documentation of each method.</li>
                             <li>Used these projects in controlled lab environments to test modern detection capabilities, expose blind spots in EDR/XDR tooling, and provide insights for defender mitigation, particularly in assessing the effectiveness of Fortinet products.</li>
                         </ul>
