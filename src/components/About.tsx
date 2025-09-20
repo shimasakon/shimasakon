@@ -29,6 +29,7 @@ export const About = () => (
                 <h1 className="text-2xl font-bold">About Me</h1>
             */}
             <h2 className="mt-0 mb-0">Who am I?</h2>
+             <h4 className="mt-0 mb-0">Note - I am porting all of my writeups, blogs and more to tlsbollei.vercel.app (domain soon).</h4>
             <p>
               I'm currently a 16 year old student from Slovakia studying Cybersecurity and Information Security, both of which I have been actively studying since the age of 11. I specialize in Security Research as well as Vulnerability Research and I'm interested in reverse engineering, cryptography as well as CyberOps!
               I play CTFs with Team Slovakia/Slovak Cyber Team, rakuz4n and 0xNOOB, where I specialize in reverse engineering and a little cryptography, due to my recent uprise in mathematical passion :D
